@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+    <title>Bouncing Ball Art</title>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+</head>
+<body>
+    <form id="variables-form">
+        <fieldset>
+            <legend>Ball variables</legend>
+            <label for="Ball radio"> Radio: 
+                <input type="number" id="ball-radio">
+            </label>
+            <fieldset>
+                <legend>Position</legend>
+                <label for="X pos">X: </label>
+                <input type="number" id="ballPosX">
+                <label for="Y pos">Y: </label>
+                <input type="number" id="ballPosY">
+            </fieldset>
+            
+            <fieldset>
+                <legend>Speed</legend>
+                <label for="X speed">X: </label>
+                <input type="number" id="ballSpeedX">
+                <label for="Y speed">Y: </label>
+                <input type="number" id="ballSpeedY">
+            </fieldset>
+        </fieldset>
+
+        <fieldset>
+            <legend>Squares variables</legend>
+            <label for="Square gap">Gap: </label>
+            <input type="number" id="squareGap">
+        </fieldset>
+        
+        
+        <button id="submit-form" type="button" onclick="setVariables()">Load values</button>
+        <button id="restore-form" type="button" onclick="restoreVariables()">Restore values</button>
+        
+    </form>
+
+    <div class="game-controls">
+        <button id="pause-start-game" onclick="switchRun()">Start/Pause</button>
+        <button id="restart-game" onclick="restartGame()">Restart</button>
+    </div>
+    
+
+    <main id="game">
+    </main>
+
+    
+    <script src="index.js"></script>
+    <script>
+        
+        
+        
+            
+    </script>
+
+</body>
+
+
+</html>
